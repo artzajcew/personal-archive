@@ -25,7 +25,10 @@ router = APIRouter(prefix="/auth", tags=["Authentication"])
 password_hash = PasswordHash.recommended()
 
 
-def create_access_token(user_id: int, token_version: int) -> tuple[str, str, datetime]:
+def create_access_token(
+    user_id: int,
+    token_version: int
+) -> tuple[str, str, datetime]:
     """Создаёт JWT-токен."""
 
     now = datetime.now(timezone.utc)

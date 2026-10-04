@@ -7,3 +7,7 @@ python-jose[cryptography]
 pwdlib[argon2]
 email-validator
 python-multipart
+pytest
+pytest-cov
+flake8
+httpx
